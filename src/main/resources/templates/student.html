@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title th:text= "${studentModel.name}"></title>
+</head>
+<body>
+
+	<header>
+		<h1>Student Info</h1>
+	</header>
+	
+	<main>
+		<h3 th:text="${studentModel.name}"></h3>
+		<a th:href="${studentModel.gitHubUrl}">GitHub Url</a>
+	</main>
+	
+	<footer>
+		<small>&copy wcci 2019</small>
+	</footer>
+
+</body>
+</html>

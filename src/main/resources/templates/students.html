@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Students</title>
+</head>
+<body>
+
+	<header>
+		<h1>Our Student List</h1>
+	</header>
+	
+	<main>
+		<div th:each = "student: ${studentsModel}">
+			<h2 th:text =${student.name}></h2>
+		</div>
+	</main>
+	
+	<footer>
+		<small>&copy wcci 2019</small>
+	</footer>
+
+</body>
+</html>
